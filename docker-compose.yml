@@ -3,7 +3,7 @@ version: '3.9'
 services:
   globaleaks:
     #build: .
-    image: ghcr.io/whallin/globaleaks-docker:main
+    image: ghcr.io/whallin/globaleaks-docker:latest
     ports:
       - 80:80/tcp
       - 443:443/tcp
