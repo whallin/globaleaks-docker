@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  globaleaks:
+    #build: .
+    image: ghcr.io/whallin/globaleaks-docker:latest
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+    volumes:
+      - globaleaks:/var/globaleaks
+
+volumes:
+  globaleaks:
+    driver: local
